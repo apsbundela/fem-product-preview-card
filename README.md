@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://github.com/apsbundela/fem-product-preview-card)
+- Solution URL: (https://github.com/apsbundela/fem-product-preview-card)
+- Live Site URL: (https://apsbundela.github.io/fem-product-preview-card/)
 
 ## My process
 
