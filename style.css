@@ -1,0 +1,121 @@
+:root {
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+.card {
+    display: grid;
+    max-width: 600px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.pd-info {
+    padding: 1.5rem;
+    background-color: var(--White);
+
+    display: grid;
+    gap: 1rem;
+}
+
+.pd-card-description {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.pd-tag-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    color: var(--grey);
+    letter-spacing: 5px;
+}
+
+.pd-title{
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    line-height: 1;
+}
+
+.pd-desc {
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+.pd-action {
+    padding: 1rem;
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 0.55rem;
+    text-align: center;
+    color: var(--White);
+    cursor: pointer;
+    background-color: var(--green-500);
+    display: flex;
+    justify-content: center;
+    gap: 0.45rem;
+}
+
+.pd-action:hover {
+    background-color: var(--green-700);
+}
+
+.pd-price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green-500);
+}
+
+.pd-original-price {
+    text-decoration: line-through;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--grey);
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
